@@ -1,0 +1,35 @@
+div{
+    background-color: #FFFDD0;
+    font-family: 'Inter', sans-serif;
+    
+    
+
+}
+body{
+    background-color: #FFFDD0;
+    background-color: inherit;
+    height: 100%;
+    
+    
+}
+h2{
+    text-align:  center;
+    padding-top: 5%;
+    background-color: #FFFDD0;
+    
+    
+}
+h5{
+    text-align:  left;
+    
+    
+    background-color: #FFFDD0;
+
+}
+.link-styles1{
+    text-align:  right;
+    padding-top: 15%;
+    padding-right: 20%;
+    
+
+}
