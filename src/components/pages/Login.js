@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Navbar from '../Navbar';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import { useState } from 'react';
 import './Login.css';
@@ -41,10 +43,9 @@ const Login = () =>{
         
 
         </label>
-        <label >
-          
-        <input type="submit" 
-        className={"sumbit"}/>
+        <label>
+
+        <button type="submit" className={"sumbit"} class="btn btn-outline-dark btn-lg">Submit</button>
         </label>
 
         
