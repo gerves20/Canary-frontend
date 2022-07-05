@@ -1,0 +1,66 @@
+div{
+    background-color: #FFFDD0;
+    font-family: 'Inter', sans-serif;
+    
+    
+
+}
+body{
+    background-color: #FFFDD0;
+    background-color: inherit;
+    height: 100%;
+    
+    
+}
+h2{
+    text-align:  center;
+    padding-top: 2%;
+    background-color: #FFFDD0;
+    font-size: large;
+    
+}
+h5{
+    color: black;
+    padding-left: 45px;
+    padding-bottom: 30px;
+    font-size: xx-small;
+   
+    
+    
+
+}
+
+.link-styles2{
+    font-family: 'Inter', sans-serif;
+    color: black;
+    padding-top: 5%;
+    padding-bottom: 300px;
+    font-size: 30px;
+    text-align:  center;
+    padding-right: 2%;
+   
+    
+}
+.email{
+    color: black;
+    font-size: 20px;
+    padding-right: 2%;
+    font-family: 'Inter', sans-serif;
+    padding-left: 15%;
+}
+
+.password{
+    color: black;
+    font-size: 20px;
+    padding-right: 2%;
+    font-family: 'Inter', sans-serif;
+    padding-left: 15%;
+
+}
+
+.submit{
+    padding-top: 40%;
+    text-align:  center;
+    color: yellow;
+
+}
