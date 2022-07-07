@@ -12,10 +12,11 @@ body{
     
     
 }
-h2{
+#header{
     text-align:  center;
     padding-top: 5%;
     background-color: #FFFDD0;
+    font-size: 30px;
     
     
 }
@@ -27,6 +28,7 @@ h5{
 
 }
 .link-styles1{
+    font-family: 'Inter', sans-serif;
     text-align:  right;
     padding-top: 15%;
     padding-right: 20%;
@@ -39,29 +41,18 @@ h5{
 
 #dropdown{
     text-align:  center;
-    font-size: 25px;
-    padding-left: 30%;
-    padding-top: 15%;
+    font-size: 15px;
+    padding-left: 7%;
+    padding-top: 5%;
+    width: 70%;
 
 }
-.input-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
 
-  .input-container label {
-    position: absolute;
-    pointer-events: none;
-    transform: translate(0, 23px) scale(1);
-    transform-origin: top left;
-    transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-    color: #6f81a5;
-    font-size: 16px;
-    line-height: 1;
-    left: 16px;
-  }
-  .input-container:focus-within label {
-    transform: translate(0, 12px) scale(0.8);
-    color: #0a53e4;
-  }
+#myLabel{
+    text-align:  center;
+    font-size: 25px;
+    padding-left: 30%;
+    padding-top: 5%;
+
+
+}
