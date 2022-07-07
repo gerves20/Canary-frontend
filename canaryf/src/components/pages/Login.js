@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Navbar from '../Navbar';
+import FloatingLabel from "react-bootstrap-floating-label";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import { useState } from 'react';
 import './Login.css';
@@ -17,34 +20,19 @@ const Login = () =>{
   return (
     <div>
       {/* <Navbar/> */}
+
       <h2 className={"link-styles2"}>Login</h2>
       <form onSubmit={handleSubmit}>
 
-        <label 
-        type="text" 
-        name="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        className={"email"}>Phone Number or Email
-        
-        <input type="text" />
-        </label>
-
-        <label 
-        type="text" 
-        name="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        className={"password"}>Password
-        <input type="text" />
+      <FloatingLabel label=" Email or Phone Number*" name="email" id="myLabel" style={{width: "70%"}}  value={email} type="text" onChange1={(e) => setEmail(e.target.value)} onChange={event => console.log(event.target.value) } />
+      <FloatingLabel label=" Password*" name="password" id="myLabel" style={{width: "70%"}}  value={password} type="text" onChange1={(e) => setPassword(e.target.value)} onChange={event => console.log(event.target.value) } />
 
         
 
-        </label>
-        <label >
-          
-        <input type="submit" 
-        className={"sumbit"}/>
+        
+        <label>
+
+        <button type="submit" className={"sumbit"} class="btn btn-outline-dark btn-lg">Submit</button>
         </label>
 
         

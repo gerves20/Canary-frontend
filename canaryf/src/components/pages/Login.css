@@ -54,7 +54,9 @@ h5{
     font-size: 20px;
     padding-right: 2%;
     font-family: 'Inter', sans-serif;
-    padding-left: 15%;
+    padding-left: 25%;
+    padding-top: 2cm;
+
 
 }
 
@@ -62,5 +64,7 @@ h5{
     padding-top: 40%;
     text-align:  center;
     color: yellow;
+    padding-left: 25%;
+    padding-top: 2cm;
 
 }

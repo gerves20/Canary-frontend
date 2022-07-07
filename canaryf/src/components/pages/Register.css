@@ -12,10 +12,11 @@ body{
     
     
 }
-h2{
+#header{
     text-align:  center;
     padding-top: 5%;
     background-color: #FFFDD0;
+    font-size: 30px;
     
     
 }
@@ -27,9 +28,31 @@ h5{
 
 }
 .link-styles1{
+    font-family: 'Inter', sans-serif;
     text-align:  right;
     padding-top: 15%;
     padding-right: 20%;
+    font-size: 25px;
+    padding-left: 30%;
     
+    
+
+}
+
+#dropdown{
+    text-align:  center;
+    font-size: 15px;
+    padding-left: 7%;
+    padding-top: 5%;
+    width: 70%;
+
+}
+
+#myLabel{
+    text-align:  center;
+    font-size: 25px;
+    padding-left: 30%;
+    padding-top: 5%;
+
 
 }
