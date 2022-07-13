@@ -22,23 +22,32 @@ const Login = () =>{
       {/* <Navbar/> */}
 
       <h2 className={"link-styles2"}>Login</h2>
+      <div className="input-container" id="form" >
       <form onSubmit={handleSubmit}>
 
-      <FloatingLabel label=" Email or Phone Number*" name="email" id="myLabel" style={{width: "70%"}}  value={email} type="text" onChange1={(e) => setEmail(e.target.value)} onChange={event => console.log(event.target.value) } />
-      <FloatingLabel label=" Password*" name="password" id="myLabel" style={{width: "70%"}}  value={password} type="text" onChange1={(e) => setPassword(e.target.value)} onChange={event => console.log(event.target.value) } />
+      <div id="register">
+<div class="form-floating mb-3" id="reg">
+  <input type="email" class="form-control"  style={{width: "70%"}} value={email} onChange={(e) => setEmail(e.target.value)} id="floatingInput" placeholder="name@example.com"/>
+  <label for="floatingInput">Email address*</label>
+</div>
+<div class="form-floating mb-3" id="reg" >
+  <input type="password" name="password" class="form-control" style={{width: "70%"}} value={password} onChange={(e) => setPassword(e.target.value)} id="floatingPassword" placeholder="Password"/>
+  <label for="floatingPassword">Password*</label>
+</div>
 
-        
+        </div>
 
-        
+        <div id = "button">
         <label>
 
         <button type="submit" className={"sumbit"} class="btn btn-outline-dark btn-lg">Submit</button>
         </label>
+        </div>
 
         
       </form>
 
-     
+     </div>
 
       
     </div>
