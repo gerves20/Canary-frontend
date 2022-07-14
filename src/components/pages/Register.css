@@ -68,4 +68,7 @@ h5{
     padding-left: 25%;
 
 }
+input:focus + label {
+    color:#2F4F4F;
+  }
 

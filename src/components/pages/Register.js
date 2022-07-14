@@ -1,6 +1,9 @@
 import React from 'react';
 import './Register.css';
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
+import DatePicker from 'react-datepicker';
+import moment from 'moment';
+import 'react-datepicker/dist/react-datepicker.css';
 
 
 // import Select from 'react-select';
@@ -33,7 +36,7 @@ const Register = () =>{
   
   
 
-  
+ ;
 
   const [firstname, setFname] = useState("");
   const [lastname, setLname] = useState("");
@@ -46,7 +49,11 @@ const Register = () =>{
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [gender, setGender] = useState("");
-  const [password, setPassword, password1] = useState("");
+  const [password, setPassword] = useState("");
+  const [cPassword, setCPassword] = useState('');
+  const [showErrorMessage, setShowErrorMessage] = useState(false);
+  const [cPasswordClass, setCPasswordClass] = useState('form-control');
+  const [isCPasswordDirty, setIsCPasswordDirty] = useState(false);
   // const [genders, setGenders] = useState("");
   
 
@@ -58,15 +65,28 @@ const Register = () =>{
   const handleSubmit = (event) => {
     event.preventDefault();
     
-    alert(`The first you entered was: ${password1}`)
+    alert(`The first you entered was: ${dob}`)
   }
 
   // const handleChange = (event) => {
   //   setValue(event.target.value);
   // };
-
+  const handleCPassword = (e) => {
+    setCPassword(e.target.value);
+    setIsCPasswordDirty(true);
+}
   
-
+useEffect(() => {
+  if (isCPasswordDirty) {
+      if (password === cPassword) {
+          setShowErrorMessage(false);
+          setCPasswordClass('form-control is-valid')
+      } else {
+          setShowErrorMessage(true)
+          setCPasswordClass('form-control is-invalid')
+      }
+  }
+}, [cPassword])
  
   
 
@@ -99,13 +119,14 @@ const Register = () =>{
 <div class="form-floating mb-3" id="reg">
   <input type="text" name="name" style={{width: "70%"}}  value={firstname} onChange={(e) => setFname(e.target.value)} class="form-control" id="floatingInput" placeholder="Name"/>
   <label for="floatingInput">First Name*</label>
+  
 </div>
 <div class="form-floating mb-3" id="reg">
   <input type="text" name="name"  class="form-control" style={{width: "70%"}} value={lastname} onChange={(e) => setLname(e.target.value)} id="floatingInput" placeholder="Name"/>
   <label for="floatingInput">Last Name*</label>
 </div>
 <div class="form-floating mb-3" id="reg">
-  <input type="date" class="form-control" style={{width: "70%"}} value={dob} onChange={(e) => setDob(e.target.value)} id="floatingInput" placeholder="06/20/2002"/>
+  <input type="date" class="form-control"  min="1900-01-01" max="2023-01-01" style={{width: "70%"}} value={dob} onChange={(e) => setDob(e.target.value)} id="floatingInput" placeholder="06/20/2002"/>
   <label for="floatingInput">Date of Birth*</label>
 </div>
 <div class="form-floating mb-3" id="reg">
@@ -152,62 +173,22 @@ const Register = () =>{
   <label for="floatingInput">Username*</label>
 </div>
 <div class="form-floating mb-3" id="reg" >
-  <input type="password" name="password" class="form-control" style={{width: "70%"}} value={password} onChange={(e) => setPassword(e.target.value)} id="floatingPassword" placeholder="Password"/>
+  <input type="password"  name="password" class="form-control" style={{width: "70%"}} value={password} onChange={(e) => setPassword(e.target.value)} id="floatingPassword" placeholder="Password"/>
   <label for="floatingPassword">Password*</label>
 </div>
 
 <div class="form-floating mb-3" id="reg">
-  <input type="password" name="password" class="form-control" style={{width: "70%"}} value={password1} id="floatingPassword" onChange={(e) => setPassword(e.target.value)} placeholder="Password"/>
-  <label for="floatingPassword">Confirm Password*</label>
+  <input type="password"  onChange={handleCPassword} name="password" class="form-control" style={{width: "70%"}} value={cPassword} id="floatingPassword" className={cPasswordClass} placeholder="Password"/>
+  <label htmlFor="confirmPassword" for="floatingPassword">Confirm Password*</label>
 </div>
+{showErrorMessage && isCPasswordDirty ? <div> Passwords did not match </div> : ''}
 
 </div>
 
    
       
       
-{/* <FloatingLabel label=" First Name *" id="myLabel" style={{width: "70%", fontFamily: 'Inter' }} name="firstname" editorValue={firstname} type="text"  onChange={event => console.log(event.target.value) }>
-<input  onChange={(e) => setFname(e.target.value)} value={firstname}  name="firstname" />
-</FloatingLabel>
-<input type="submit" />
 
-<FloatingLabel label="Last Name* " id="myLabel" style={{width: "70%"}} name="lastname" value={lastname} onChange1={(e) => setLname(e.target.value)} type="text" onChange={event => console.log(event.target.value) } >
-<input  onChange={(e) => setLname(e.target.value)} value={lastname} type="text"  name="lastname" />
-</FloatingLabel>
-<FloatingLabel label="Date Of Birth* " id="myLabel" style={{width: "70%"}} name="dob" value={dob} type="text" onChange={event => console.log(event.target.value) } >
-<input  onChange={(e) => setDob(e.target.value)} value={dob}  name="dob" type="text" />
-</FloatingLabel>
-<FloatingLabel label="Address* " id="myLabel" style={{width: "70%"}} name="address" value={address} type="text" onChange1={(e) => setAddress(e.target.value)}onChange={event => console.log(event.target.value) } >
-<input  onChange={(e) => setAddress(e.target.value)} value={address}  name="address" type="text"  className={"address"} />
-</FloatingLabel>
-<FloatingLabel label="Country* " id="myLabel" style={{width: "70%"}}  value={country} type="text" onChange1={(e) => setCountry(e.target.value)} onChange={event => console.log(event.target.value) } >
-<input  onChange={(e) => setCountry(e.target.value)} value={country}  name="country" type="text" />
-</FloatingLabel>
-<FloatingLabel label="State* " id="myLabel" style={{width: "70%"}} value={state} type="text" onChange1={(e) => setState(e.target.value)} onChange={event => console.log(event.target.value) } >
-<input  onChange={(e) => setState(e.target.value)} value={state}  name="state" type="text" />
-</FloatingLabel>
-<FloatingLabel label="Zip Code* " id="myLabel" style={{width: "70%"}} value={zip} type="text" onChange1={(e) => setZip(e.target.value)} onChange={event => console.log(event.target.value) } >
-
-</FloatingLabel>
-<FloatingLabel label="Phone Number* " id="myLabel" style={{width: "70%"}} value={phonenum} type="text" onChange1={(e) => setPhonenum(e.target.value)} onChange={event => console.log(event.target.value) } >
-
-</FloatingLabel>
-<div>
-      <label className="col-md-8 col-offset-4" id= "dropdown">
-        Gender*
-      <select value={value} onChange={handleChange}>
-        {options.map((option) => (
-            <option value={option.value} onChange={(e) => setGender(e.target.value)}>{option.label}</option>
-          ))}
-
-      </select>
-      </label>
-    </div>
-<FloatingLabel label="Email* " id="myLabel" style={{width: "70%"}} value={email} type="text" onChange1={(e) => setEmail(e.target.value)} name="email" onChange={event => console.log(event.target.value) } />
-<FloatingLabel label="Username* " id="myLabel" style={{width: "70%"}} value={username} type="text" onChange1={(e) => setUsername(e.target.value)} onChange={event => console.log(event.target.value) } />
-<FloatingLabel label="Password* " id="myLabel" style={{width: "70%"}} value={password} type="text" onChange1={(e) => setPassword(e.target.value)} onChange={event => console.log(event.target.value) } />
-<FloatingLabel label="Re-Type Password* " id="myLabel" style={{width: "70%"}} value={password} type="text" onChange1={(e) => setPassword(e.target.value)} onChange={event => console.log(event.target.value) } />
-{/* <DatePicker selected={startdate} onChange={(date) => setStartDate(date)} /> */}
 <div id="button">
 <label> 
 
