@@ -40,7 +40,7 @@ const Login = () =>{
         <div id = "button">
         <label>
 
-        <button type="submit" className={"sumbit"} class="btn btn-outline-dark btn-lg">Submit</button>
+        <button type="submit"disabled={!email||!password} className={"sumbit"} class="btn btn-outline-dark btn-lg">Submit</button>
         </label>
         </div>
 

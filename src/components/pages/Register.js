@@ -68,6 +68,9 @@ const Register = () =>{
     alert(`The first you entered was: ${dob}`)
   }
 
+
+  
+
   // const handleChange = (event) => {
   //   setValue(event.target.value);
   // };
@@ -192,7 +195,7 @@ useEffect(() => {
 <div id="button">
 <label> 
 
-<button type="submit" className={"sumbit"} style={{width: "100%" }} class="btn btn-outline-dark btn-lg" id="button">Submit</button>
+<button type="submit" disabled={!email || !firstname || !lastname ||!dob ||!address ||!state ||!country ||!zip ||!phonenum ||!gender ||!username || !password ||!cPassword} className={"sumbit"} style={{width: "100%" }} class="btn btn-outline-dark btn-lg" id="button">Submit</button>
 </label>
 </div>
 
