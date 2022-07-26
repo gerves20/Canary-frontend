@@ -72,3 +72,21 @@ input:focus + label {
     color:#2F4F4F;
   }
 
+#header1{
+    padding-right: 25%;
+    padding-bottom: 7%;
+    padding-top: 7%;
+}
+#title{
+    font-size: 15px;
+
+}
+.btnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 40vh;
+  }
+
