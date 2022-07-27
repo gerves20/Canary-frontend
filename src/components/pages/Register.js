@@ -1,15 +1,15 @@
 import React from 'react';
 import './Register.css';
 import { useState, useEffect} from 'react';
-import { Link, Redirect } from "react-router-dom";
-import LoadingSpinner from "./LoadingSpinner";
+import { Link} from "react-router-dom";
+// import LoadingSpinner from "./LoadingSpinner";
 import { useForm } from 'react-hook-form'
 
 import "./Spinner.css";
-import { Spinner, Button } from 'react-bootstrap';
-import DatePicker from 'react-datepicker';
-import { Puff, Audio, BallTriangle, Bars, Circles, Grid, Hearts, Oval, Rings, SpinningCircles, TailSpin, ThreeDots} from 'react-loading-icons'
-import moment from 'moment';
+// import { Spinner, Button } from 'react-bootstrap';
+// import DatePicker from 'react-datepicker';
+
+// import moment from 'moment';
 import 'react-datepicker/dist/react-datepicker.css';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
@@ -21,20 +21,14 @@ import 'react-datepicker/dist/react-datepicker.css'
 
 
 // import Navbar from '../Navbar';
-import FloatingLabel from "react-bootstrap-floating-label";
-import Form from 'react-bootstrap/Form';
+// import FloatingLabel from "react-bootstrap-floating-label";
+// import Form from 'react-bootstrap/Form';
 
 // import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import reactSelect from 'react-select';
 
 
-const options = [
-  { label: 'Male', value: 'male' },
-  { label: 'Female', value: 'female' },
-  { label: 'Other', value: 'other' },
-  { label: 'Prefer Not To Say', value: 'prefer' },
-];
 
 
 
