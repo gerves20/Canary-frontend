@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Home.css';
-import { Link, useParams} from "react-router-dom";
+import { Link} from "react-router-dom";
 const Verification = () => {
     const [isValid, setIsValid] = useState(false);
     const [message, setMessage] = useState('');
-    const { token } = useParams();
+    // const { token } = useParams();
     // let navigate = useNavigate();
-    useEffect(() => {
-        if (token) {
-            verifyToken();
-        }
-    }, []);
+    // useEffect(() => {
+    //     if (token) {
+    //         verifyToken();
+    //     }
+    // }, []);
     async function verifyToken() {
         try {
             const response = await fetch(`http://localhost:5000/auth/verify/${token}`);
