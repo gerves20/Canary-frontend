@@ -4,6 +4,13 @@ import { useState, useEffect } from 'react';
 import { Link, useParams } from "react-router-dom";
 
 const Vaccines = ()=>{
+    return(
+        <div>
+            <h1>Your Vaccines</h1>
+        </div>
+
+    );
+
 
 }
 
