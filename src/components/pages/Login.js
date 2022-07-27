@@ -10,7 +10,7 @@ import { toast } from 'react-toastify';
 const Login = () =>{
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [message, setMessage] = useState('');
+  const [message] = useState('');
   const navigate = useNavigate();
   //const handleSubmit = (event) => {
     //event.preventDefault();

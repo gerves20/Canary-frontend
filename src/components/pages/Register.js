@@ -93,9 +93,9 @@ const Register = () =>{
   const [showErrorMessage, setShowErrorMessage] = useState(false);
   const [cPasswordClass, setCPasswordClass] = useState('form-control');
   const [isCPasswordDirty, setIsCPasswordDirty] = useState(false);
-  const [message, setMessage] = useState('');
+  // const [message, setMessage] = useState('');
  
-  const {handleSubmit, formState} = useForm()
+  const { formState} = useForm()
   const { isSubmitting } = formState
   // const [genders, setGenders] = useState("");
   

@@ -5,7 +5,7 @@ const Verification = () => {
     const [isValid, setIsValid] = useState(false);
     const [message, setMessage] = useState('');
     const { token } = useParams();
-    let navigate = useNavigate();
+    // let navigate = useNavigate();
     useEffect(() => {
         if (token) {
             verifyToken();
