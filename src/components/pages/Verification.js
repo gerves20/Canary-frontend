@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { Link, useParams} from "react-router-dom";
 const Verification = () => {
     const [isValid, setIsValid] = useState(false);
     const [message, setMessage] = useState('');

@@ -16,7 +16,7 @@ const Home = () =>{
         <div>
             <h1>CANARY</h1>
             <h4>Universal Vaccine Pass</h4>
-            <img src ="http://localhost:3000/public/vector.png" className='img' />
+            {/* <img src ="http://localhost:3000/public/vector.png" className='img' /> */}
             <h5>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
