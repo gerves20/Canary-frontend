@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Navbar from '../Navbar';
-import FloatingLabel from "react-bootstrap-floating-label";
+// import Navbar from '../Navbar';
+// import FloatingLabel from "react-bootstrap-floating-label";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link,useNavigate} from "react-router-dom";
 import { useState } from 'react';

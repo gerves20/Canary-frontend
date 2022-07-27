@@ -25,7 +25,7 @@ import 'react-datepicker/dist/react-datepicker.css'
 // import Form from 'react-bootstrap/Form';
 
 // import styled from 'styled-components';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 // import reactSelect from 'react-select';
 
 

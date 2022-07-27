@@ -13,7 +13,7 @@ import Vaccines from './components/pages/Vaccines';
 
 import Dashboard from './components/Dashboard';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Select from 'react-select';
+// import Select from 'react-select';
 
 
 function App() {

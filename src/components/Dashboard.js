@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 import {  Link } from "react-router-dom";
 import './Navbar.css';
-import Login from "./pages/Login";
+// import Login from "./pages/Login";
 const Dashboard = ({ setAuth }) =>{
     const [firstname, setFname] = useState("");
     const [lastname, setLname] = useState("");
