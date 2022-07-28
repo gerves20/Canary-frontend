@@ -152,6 +152,7 @@ useEffect(() => {
           setCPasswordClass('form-control is-invalid')
       }
   }
+  handleCPassword();
 }, [cPassword])
 
 // function submitForm(data) {
