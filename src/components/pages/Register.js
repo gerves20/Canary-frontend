@@ -89,10 +89,10 @@ const Register = () =>{
   const [username, setUsername] = useState("");
   const [gender, setGender] = useState("");
   const [password, setPassword] = useState("");
-  const [cPassword, setCPassword] = useState('');
-  const [showErrorMessage, setShowErrorMessage] = useState(false);
-  const [cPasswordClass, setCPasswordClass] = useState('form-control');
-  const [isCPasswordDirty, setIsCPasswordDirty] = useState(false);
+  // const [cPassword, setCPassword] = useState('');
+  // const [showErrorMessage, setShowErrorMessage] = useState(false);
+  // const [cPasswordClass, setCPasswordClass] = useState('form-control');
+  // const [isCPasswordDirty, setIsCPasswordDirty] = useState(false);
   // const [message, setMessage] = useState('');
  
   const { formState} = useForm()
