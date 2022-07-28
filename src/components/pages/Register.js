@@ -152,8 +152,8 @@ useEffect(() => {
           setCPasswordClass('form-control is-invalid')
       }
   }
-  handleCPassword();
-}, [cPassword])
+  
+}, [cPassword]) // eslint-disable-line react-hooks/exhaustive-deps
 
 // function submitForm(data) {
 //   return new Promise((resolve) => {
