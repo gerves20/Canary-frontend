@@ -137,23 +137,23 @@ const Register = () =>{
   //        setIsLoading(false);
   //     });
   // };
-  const handleCPassword = (e) => {
-    setCPassword(e.target.value);
-    setIsCPasswordDirty(true);
-}
+//   const handleCPassword = (e) => {
+//     setCPassword(e.target.value);
+//     setIsCPasswordDirty(true);
+// }
   
-useEffect(() => {
-  if (isCPasswordDirty) {
-      if (password === cPassword) {
-          setShowErrorMessage(false);
-          setCPasswordClass('form-control is-valid')
-      } else {
-          setShowErrorMessage(true)
-          setCPasswordClass('form-control is-invalid')
-      }
-  }
-  handleCPassword();
-}, [cPassword])
+// useEffect(() => {
+//   if (isCPasswordDirty) {
+//       if (password === cPassword) {
+//           setShowErrorMessage(false);
+//           setCPasswordClass('form-control is-valid')
+//       } else {
+//           setShowErrorMessage(true)
+//           setCPasswordClass('form-control is-invalid')
+//       }
+//   }
+//   // handleCPassword();
+// }, [cPassword])
 
 // function submitForm(data) {
 //   return new Promise((resolve) => {
@@ -350,10 +350,10 @@ useEffect(() => {
 </div>
 
 <div class="form-floating mb-3" id="reg">
-  <input type="password"  onChange={handleCPassword} name="password" class="form-control" style={{width: "70%"}} value={cPassword} id="floatingPassword" className={cPasswordClass} placeholder="Password"/>
+  <input type="password"  name="password" class="form-control" style={{width: "70%"}} value={cPassword} id="floatingPassword" className={cPasswordClass} placeholder="Password"/>
   <label htmlFor="confirmPassword" for="floatingPassword">Confirm Password*</label>
 </div>
-{showErrorMessage && isCPasswordDirty ? <div> Passwords did not match </div> : ''}
+{/* {showErrorMessage && isCPasswordDirty ? <div> Passwords did not match </div> : ''} */}
 
 </div>
 
