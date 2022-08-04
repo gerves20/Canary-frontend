@@ -10,14 +10,32 @@ const Navbar = () =>{
 
   return (
   <div>
-    <li>
-      <Link  className={"link-styles"} to="/">Home</Link>
+    {/* {!isAuth() ? <NavLoggedIn /> : <NavPublic />} */}
+  <li>
+  
+  <Link  className={"link-styles"} to="/vaccines">Vaccines</Link>
+      <Link  className={"link-styles"}  to="/settings">Settings</Link>
+      <Link className={"link-styles"} to="/profile">Profile</Link>
+      <Link className={"link-styles"} to="/dashboard">Notifications</Link>
+      <Link className="text-link" to="/" ><button  type="submit" className={"sumbit"} class="btn btn-outline-dark btn-lg">Log Out</button></Link>
+ 
+
+  </li>
+ 
+  <li>
+
+  <Link  className={"link-styles"} to="/">Home</Link>
       <Link  className={"link-styles"}  to="/register">Register</Link>
       <Link className={"link-styles"} to="/login">Login</Link>
-    </li>
+  
+
+  </li>
+ 
+
     
     
   </div>
+
   );
 }
 export default Navbar;

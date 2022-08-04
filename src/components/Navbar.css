@@ -171,6 +171,7 @@
   div{
       background-color: #FFFDD0;
       
+      
   }
 
   li{
@@ -187,6 +188,7 @@
     text-align:right;
     align-items: right;
     /* text-align: right; */
+    background-color:   #FFFDD0;
 
   }
   .link-styles {
@@ -207,4 +209,47 @@
  
     
   }
+  .text-link{
+    text-align: right;
+    padding-left: 500px;
 
+  }
+
+  .link-styles3{
+    padding-left: 300px;
+    text-decoration: none;
+    color: black;
+    
+
+  }
+
+  
+  .card-title{
+    padding-top: 10px;
+    background-color: white;
+    padding-left: 0px;
+  }
+  .card-body{
+    background-color: white;
+  }
+  .card{
+    width: 500px;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    
+  }
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #4d4655 !important;
+    color: #8064A2;
+    border-color:#4d4655!important;
+}
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited{
+  background-color: #F2D2BD !important;
+  
+  border-color:#F2D2BD !important;
+  color:black !important;
+  padding-right: 6px !important;
+  
+}

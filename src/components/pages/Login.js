@@ -7,6 +7,9 @@ import { Link,useNavigate} from "react-router-dom";
 import { useState } from 'react';
 import './Login.css';
 import { toast } from 'react-toastify';
+
+
+
 const Login = () =>{
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -55,7 +58,7 @@ const Login = () =>{
       <div id="register">
 <div class="form-floating mb-3" id="reg">
   <input type="email" class="form-control"  style={{width: "70%"}} value={email} onChange={(e) => setEmail(e.target.value)} id="floatingInput" placeholder="name@example.com"/>
-  <label for="floatingInput">Email address or Phone number*</label>
+  <label for="floatingInput">Email address*</label>
 </div>
 <div class="form-floating mb-3" id="reg" >
   <input type="password" name="password" class="form-control" style={{width: "70%"}} value={password} onChange={(e) => setPassword(e.target.value)} id="floatingPassword" placeholder="Password"/>
@@ -65,7 +68,7 @@ const Login = () =>{
         </div>
         <div id = "button">
         <label>
-        <button type="submit"disabled={!email||!password} className={"sumbit"} class="btn btn-outline-dark btn-lg">Submit</button>
+        <button type="submit"disabled={!email||!password} className={"sumbit"} class="btn btn-outline-dark btn-lg">Login</button>
         </label>
         </div>
       </form>

@@ -12,7 +12,7 @@ import { Puff, Audio, BallTriangle, Bars, Circles, Grid, Hearts, Oval, Rings, Sp
 import moment from 'moment';
 import 'react-datepicker/dist/react-datepicker.css';
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 // import Select from 'react-select';
@@ -384,7 +384,7 @@ useEffect(() => {
                   <span className="spinner-grow spinner-grow-sm"></span>
                   
                 )}
-  Submit</button>
+  Register</button>
   <ToastContainer />
   
 </label>

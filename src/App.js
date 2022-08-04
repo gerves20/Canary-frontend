@@ -11,6 +11,10 @@ import { ToastContainer } from 'react-toastify';
 import Dashboard from './components/Dashboard';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Select from 'react-select';
+import Settings from './components/pages/Settings';
+import Profile from './components/pages/Profile';
+import Vaccines from './components/pages/Vaccines';
+
 
 
 function App() {
@@ -48,6 +52,10 @@ function App() {
         <Route path='/verify/:token' element={<Verification/>} />
         <Route path='/forgot' element={<Forgot/>} />
         <Route path="/dashboard" element={<Dashboard/>} />
+        <Route path="/settings" element={<Settings/>} />
+        <Route path="/vaccines" element={<Vaccines/>} />
+        <Route path="/profile" element={<Profile/>} />
+
         
         
         

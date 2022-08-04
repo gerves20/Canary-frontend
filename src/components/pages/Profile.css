@@ -1,4 +1,50 @@
-div{
+/* .app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+  }
+  
+  table {
+    font-family: 'Inter', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    background-color: white;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  th {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+  }
+  
+  td {
+    background-color: rgb(205, 235, 253);
+  }
+  
+  /* form {
+    display: flex;
+    gap: 5px;
+  } */
+  
+  /* form td:last-child {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  form * {
+    font-size: 28px;
+  }
+  div{
     background-color: #FFFDD0;
     font-family: 'Inter', sans-serif;
     
@@ -28,7 +74,7 @@ h5{
     background-color: #FFFDD0;
 
 }
-.link-styles1{
+/* .link-styles12{
     font-family: 'Inter', sans-serif;
     text-align:  right;
     padding-top: 15%;
@@ -100,3 +146,39 @@ input:focus + label {
 #personal{
     padding-bottom: 200px;
 }
+ */ 
+
+ th {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    
+  }
+  table {
+    font-family: 'Inter', sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+    background-color: white;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    background-color: white;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    
+  }
+  h1{
+    padding-bottom: 20px;
+  }
+  .vaccine{
+    text-align: center;
+    width: 100%;
+    justify-content: space-evenly;
+
+  }
+  h2{
+    padding-top: 70px;
+  }

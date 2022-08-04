@@ -17,28 +17,256 @@ const Home = () =>{
             <h1>CANARY</h1>
             <h4>Universal Vaccine Pass</h4>
             <img src ="http://localhost:3000/public/vector.png" className='img' />
+            {/* <img src = {require('./public/vector.png')} alt = 'logo'/> */}
             <h5>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
-sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
-minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit 
-quibusdam sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur 
-fugiat, temporibus enim commodi iusto libero magni deleniti quod quam 
-consequuntur! Commodi minima excepturi repudiandae velit hic maxime
-doloremque. Quaerat provident commodi consectetur veniam similique ad 
-earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo 
-fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore 
-suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
-modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
-totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
-quasi aliquam eligendi, placeat qui corporis!
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci
+        mi, venenatis ac nisl vel, porta consequat augue. In quis nulla odio.
+        Integer vel tristique nisl. Vivamus sed urna ligula. Nullam in orci
+        lacus. Maecenas eget nulla ut ex gravida gravida id non odio. Curabitur
+        lacus erat, egestas ac nisl ut, lacinia scelerisque massa. Nam viverra
+        ligula nunc, vel venenatis eros hendrerit eget. Curabitur posuere semper
+        sem ut tincidunt. Donec turpis velit, viverra sed tempor eu, dapibus non
+        eros. Ut in finibus leo. Maecenas sit amet varius felis. Ut massa eros,
+        porta in tempus et, porttitor a turpis. Aliquam erat volutpat. Etiam
+        pellentesque sagittis massa, eu pellentesque ipsum. Aenean euismod
+        tristique neque, vitae pharetra tortor vestibulum interdum. Phasellus id
+        augue ante. Sed porta sit amet lacus sit amet laoreet. 
+        
+        Fusce ut lorem
+        dolor. Donec placerat orci nibh, vel tincidunt lacus lacinia quis.
+        Nullam sem leo, interdum in justo ut, elementum sodales felis. In ac
+        dolor sem. Cras eget erat tortor. Phasellus justo metus, mollis ut
+        tincidunt gravida, sodales at nulla. Fusce in neque neque. Proin non
+        pretium odio, id mattis lorem. Ut quis dolor purus. Orci varius natoque
+        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet
+        purus in fringilla luctus. Aenean sollicitudin ex nec facilisis
+        molestie. Donec non nibh mattis, maximus eros in, cursus purus.
+        Curabitur accumsan quam vitae sapien ultricies dapibus. In scelerisque
+        gravida lectus, sed tristique leo tempor ut. Suspendisse molestie et
+        metus vitae posuere. Vestibulum ante ipsum primis in faucibus orci
+        luctus et ultrices posuere cubilia curae; Donec eget sapien diam. Proin
+        tempor suscipit leo, vitae tempor velit posuere hendrerit. Nam a odio
+        molestie lacus vehicula semper sit amet eget lacus. Pellentesque nisl
+        purus, ultricies ac risus ut, facilisis sagittis purus. Mauris tincidunt
+        suscipit erat, id rutrum ipsum posuere nec. Pellentesque fringilla, eros
+        interdum eleifend aliquet, lacus libero egestas lorem, in maximus mi
+        tortor id augue. Vivamus rhoncus convallis ipsum, at varius nisl cursus
+        a. Quisque hendrerit nisl quis sapien posuere, vel vulputate magna
+        interdum. In dignissim, est condimentum consequat luctus, nisl leo
+        ultricies risus, in consectetur lacus tellus quis augue. Vivamus euismod
+        interdum turpis, a tempus erat tincidunt et. Phasellus luctus volutpat
+        tempor. Integer nec bibendum lacus. Sed id ultricies risus. Proin porta
+        luctus tellus nec porttitor. 
+        
+        Curabitur massa magna, ornare in dui sit
+        amet, lacinia faucibus diam. Nulla tempor accumsan velit vel viverra.
+        Mauris sit amet nulla vel tortor mollis lacinia nec at diam.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci
+        mi, venenatis ac nisl vel, porta consequat augue. In quis nulla odio.
+        Integer vel tristique nisl. Vivamus sed urna ligula. Nullam in orci
+        lacus. Maecenas eget nulla ut ex gravida gravida id non odio. Curabitur
+        lacus erat, egestas ac nisl ut, lacinia scelerisque massa. Nam viverra
+        ligula nunc, vel venenatis eros hendrerit eget. Curabitur posuere semper
+        sem ut tincidunt. Donec turpis velit, viverra sed tempor eu, dapibus non
+        eros. Ut in finibus leo. Maecenas sit amet varius felis. Ut massa eros,
+        porta in tempus et, porttitor a turpis. Aliquam erat volutpat. Etiam
+        pellentesque sagittis massa, eu pellentesque ipsum. Aenean euismod
+        tristique neque, vitae pharetra tortor vestibulum interdum. Phasellus id
+        augue ante. Sed porta sit amet lacus sit amet laoreet. Fusce ut lorem
+        dolor. Donec placerat orci nibh, vel tincidunt lacus lacinia quis.
+        Nullam sem leo, interdum in justo ut, elementum sodales felis. In ac
+        dolor sem. Cras eget erat tortor. Phasellus justo metus, mollis ut
+        tincidunt gravida, sodales at nulla. Fusce in neque neque. Proin non
+        pretium odio, id mattis lorem. Ut quis dolor purus. Orci varius natoque
+        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet
+        purus in fringilla luctus. 
+        
+        
+        Aenean sollicitudin ex nec facilisis
+        molestie. Donec non nibh mattis, maximus eros in, cursus purus.
+        Curabitur accumsan quam vitae sapien ultricies dapibus. In scelerisque
+        gravida lectus, sed tristique leo tempor ut. Suspendisse molestie et
+        metus vitae posuere. Vestibulum ante ipsum primis in faucibus orci
+        luctus et ultrices posuere cubilia curae; Donec eget sapien diam. Proin
+        tempor suscipit leo, vitae tempor velit posuere hendrerit. Nam a odio
+        molestie lacus vehicula semper sit amet eget lacus. Pellentesque nisl
+        purus, ultricies ac risus ut, facilisis sagittis purus. Mauris tincidunt
+        suscipit erat, id rutrum ipsum posuere nec. Pellentesque fringilla, eros
+        interdum eleifend aliquet, lacus libero egestas lorem, in maximus mi
+        tortor id augue. Vivamus rhoncus convallis ipsum, at varius nisl cursus
+        a. Quisque hendrerit nisl quis sapien posuere, vel vulputate magna
+        interdum. In dignissim, est condimentum consequat luctus, nisl leo
+        ultricies risus, in consectetur lacus tellus quis augue. Vivamus euismod
+        interdum turpis, a tempus erat tincidunt et. Phasellus luctus volutpat
+        tempor. Integer nec bibendum lacus. Sed id ultricies risus. Proin porta
+        luctus tellus nec porttitor. Curabitur massa magna, ornare in dui sit
+        amet, lacinia faucibus diam. Nulla tempor accumsan velit vel viverra.
+        Mauris sit amet nulla vel tortor mollis lacinia nec at diam.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci
+        mi, venenatis ac nisl vel, porta consequat augue. In quis nulla odio.
+        Integer vel tristique nisl. Vivamus sed urna ligula. Nullam in orci
+        lacus. Maecenas eget nulla ut ex gravida gravida id non odio. Curabitur
+        lacus erat, egestas ac nisl ut, lacinia scelerisque massa. Nam viverra
+        ligula nunc, vel venenatis eros hendrerit eget. Curabitur posuere semper
+        sem ut tincidunt. Donec turpis velit, viverra sed tempor eu, dapibus non
+        eros. Ut in finibus leo. Maecenas sit amet varius felis. Ut massa eros,
+        porta in tempus et, porttitor a turpis. Aliquam erat volutpat. Etiam
+        pellentesque sagittis massa, eu pellentesque ipsum. Aenean euismod
+        tristique neque, vitae pharetra tortor vestibulum interdum. Phasellus id
+        augue ante. Sed porta sit amet lacus sit amet laoreet. Fusce ut lorem
+        dolor. Donec placerat orci nibh, vel tincidunt lacus lacinia quis.
+        Nullam sem leo, interdum in justo ut, elementum sodales felis. In ac
+        dolor sem. Cras eget erat tortor. Phasellus justo metus, mollis ut
+        tincidunt gravida, sodales at nulla. Fusce in neque neque. Proin non
+        pretium odio, id mattis lorem. Ut quis dolor purus. Orci varius natoque
+        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet
+        purus in fringilla luctus. Aenean sollicitudin ex nec facilisis
+        molestie. Donec non nibh mattis, maximus eros in, cursus purus.
+        Curabitur accumsan quam vitae sapien ultricies dapibus. In scelerisque
+        gravida lectus, sed tristique leo tempor ut. Suspendisse molestie et
+        metus vitae posuere. 
+        
+        Vestibulum ante ipsum primis in faucibus orci
+        luctus et ultrices posuere cubilia curae; Donec eget sapien diam. Proin
+        tempor suscipit leo, vitae tempor velit posuere hendrerit. Nam a odio
+        molestie lacus vehicula semper sit amet eget lacus. Pellentesque nisl
+        purus, ultricies ac risus ut, facilisis sagittis purus. Mauris tincidunt
+        suscipit erat, id rutrum ipsum posuere nec. Pellentesque fringilla, eros
+        interdum eleifend aliquet, lacus libero egestas lorem, in maximus mi
+        tortor id augue. Vivamus rhoncus convallis ipsum, at varius nisl cursus
+        a. Quisque hendrerit nisl quis sapien posuere, vel vulputate magna
+        interdum. In dignissim, est condimentum consequat luctus, nisl leo
+        ultricies risus, in consectetur lacus tellus quis augue. Vivamus euismod
+        interdum turpis, a tempus erat tincidunt et. Phasellus luctus volutpat
+        tempor. Integer nec bibendum lacus. Sed id ultricies risus. Proin porta
+        luctus tellus nec porttitor. Curabitur massa magna, ornare in dui sit
+        amet, lacinia faucibus diam. Nulla tempor accumsan velit vel viverra.
+        Mauris sit amet nulla vel tortor mollis lacinia nec at diam.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci
+        mi, venenatis ac nisl vel, porta consequat augue. In quis nulla odio.
+        Integer vel tristique nisl. Vivamus sed urna ligula. Nullam in orci
+        lacus. Maecenas eget nulla ut ex gravida gravida id non odio. Curabitur
+        lacus erat, egestas ac nisl ut, lacinia scelerisque massa. Nam viverra
+        ligula nunc, vel venenatis eros hendrerit eget. Curabitur posuere semper
+        sem ut tincidunt. Donec turpis velit, viverra sed tempor eu, dapibus non
+        eros. Ut in finibus leo. Maecenas sit amet varius felis. Ut massa eros,
+        porta in tempus et, porttitor a turpis. Aliquam erat volutpat. Etiam
+        pellentesque sagittis massa, eu pellentesque ipsum. Aenean euismod
+        tristique neque, vitae pharetra tortor vestibulum interdum. Phasellus id
+        augue ante. Sed porta sit amet lacus sit amet laoreet. Fusce ut lorem
+        dolor. Donec placerat orci nibh, vel tincidunt lacus lacinia quis.
+        Nullam sem leo, interdum in justo ut, elementum sodales felis. In ac
+        dolor sem. Cras eget erat tortor. Phasellus justo metus, mollis ut
+        tincidunt gravida, sodales at nulla. Fusce in neque neque. Proin non
+        pretium odio, id mattis lorem. Ut quis dolor purus. Orci varius natoque
+        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet
+        purus in fringilla luctus. Aenean sollicitudin ex nec facilisis
+        molestie. Donec non nibh mattis, maximus eros in, cursus purus.
+        Curabitur accumsan quam vitae sapien ultricies dapibus. In scelerisque
+        gravida lectus, sed tristique leo tempor ut. Suspendisse molestie et
+        metus vitae posuere. Vestibulum ante ipsum primis in faucibus orci
+        luctus et ultrices posuere cubilia curae; Donec eget sapien diam. Proin
+        tempor suscipit leo, vitae tempor velit posuere hendrerit. Nam a odio
+        molestie lacus vehicula semper sit amet eget lacus. Pellentesque nisl
+        purus, ultricies ac risus ut, facilisis sagittis purus. Mauris tincidunt
+        suscipit erat, id rutrum ipsum posuere nec. Pellentesque fringilla, eros
+        interdum eleifend aliquet, lacus libero egestas lorem, in maximus mi
+        tortor id augue. Vivamus rhoncus convallis ipsum, at varius nisl cursus
+        a. Quisque hendrerit nisl quis sapien posuere, vel vulputate magna
+        interdum. In dignissim, est condimentum consequat luctus, nisl leo
+        ultricies risus, in consectetur lacus tellus quis augue. Vivamus euismod
+        interdum turpis, a tempus erat tincidunt et. 
+        
+        <h5>Phasellus luctus volutpat
+        tempor. Integer nec bibendum lacus. Sed id ultricies risus. Proin porta
+        luctus tellus nec porttitor. Curabitur massa magna, ornare in dui sit
+        amet, lacinia faucibus diam. Nulla tempor accumsan velit vel viverra.
+        Mauris sit amet nulla vel tortor mollis lacinia nec at diam.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci
+        mi, venenatis ac nisl vel, porta consequat augue. In quis nulla odio.
+        Integer vel tristique nisl. Vivamus sed urna ligula. Nullam in orci
+        lacus. Maecenas eget nulla ut ex gravida gravida id non odio. Curabitur
+        lacus erat, egestas ac nisl ut, lacinia scelerisque massa. Nam viverra
+        ligula nunc, vel venenatis eros hendrerit eget. Curabitur posuere semper
+        sem ut tincidunt. Donec turpis velit, viverra sed tempor eu, dapibus non
+        eros. Ut in finibus leo. Maecenas sit amet varius felis. Ut massa eros,
+        porta in tempus et, porttitor a turpis. Aliquam erat volutpat. Etiam
+        pellentesque sagittis massa, eu pellentesque ipsum. Aenean euismod
+        tristique neque, vitae pharetra tortor vestibulum interdum. Phasellus id
+        augue ante. Sed porta sit amet lacus sit amet laoreet. Fusce ut lorem
+        dolor. Donec placerat orci nibh, vel tincidunt lacus lacinia quis.
+        Nullam sem leo, interdum in justo ut, elementum sodales felis. In ac
+        dolor sem. Cras eget erat tortor. Phasellus justo metus, mollis ut
+        tincidunt gravida, sodales at nulla. Fusce in neque neque. Proin non
+        pretium odio, id mattis lorem. Ut quis dolor purus. Orci varius natoque
+        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet
+        purus in fringilla luctus. Aenean sollicitudin ex nec facilisis
+        molestie. Donec non nibh mattis, maximus eros in, cursus purus.
+        Curabitur accumsan quam vitae sapien ultricies dapibus. In scelerisque
+        gravida lectus, sed tristique leo tempor ut. Suspendisse molestie et
+        metus vitae posuere. Vestibulum ante ipsum primis in faucibus orci
+        luctus et ultrices posuere cubilia curae; Donec eget sapien diam. Proin
+        tempor suscipit leo, vitae tempor velit posuere hendrerit. Nam a odio
+        molestie lacus vehicula semper sit amet eget lacus. Pellentesque nisl
+        purus, ultricies ac risus ut, facilisis sagittis purus. Mauris tincidunt
+        suscipit erat, id rutrum ipsum posuere nec. Pellentesque fringilla, eros
+        interdum eleifend aliquet, lacus libero egestas lorem, in maximus mi
+        tortor id augue. Vivamus rhoncus convallis ipsum, at varius nisl cursus
+        a. Quisque hendrerit nisl quis sapien posuere, vel vulputate magna
+        interdum. In dignissim, est condimentum consequat luctus, nisl leo
+        ultricies risus, in consectetur lacus tellus quis augue. Vivamus euismod
+        interdum turpis, a tempus erat tincidunt et. Phasellus luctus volutpat
+        tempor. Integer nec bibendum lacus. Sed id ultricies risus. Proin porta
+        luctus tellus nec porttitor. Curabitur massa magna, ornare in dui sit
+        amet, lacinia faucibus diam. Nulla tempor accumsan velit vel viverra.
+        Mauris sit amet nulla vel tortor mollis lacinia nec at diam.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci
+        mi, venenatis ac nisl vel, porta consequat augue. In quis nulla odio.
+        Integer vel tristique nisl. Vivamus sed urna ligula. Nullam in orci
+        lacus. Maecenas eget nulla ut ex gravida gravida id non odio. Curabitur
+        lacus erat, egestas ac nisl ut, lacinia scelerisque massa. Nam viverra
+        ligula nunc, vel venenatis eros hendrerit eget. Curabitur posuere semper
+        sem ut tincidunt. Donec turpis velit, viverra sed tempor eu, dapibus non
+        eros. Ut in finibus leo. Maecenas sit amet varius felis. Ut massa eros,
+        porta in tempus et, porttitor a turpis. Aliquam erat volutpat. Etiam
+        pellentesque sagittis massa, eu pellentesque ipsum. Aenean euismod
+        tristique neque, vitae pharetra tortor vestibulum interdum. Phasellus id
+        augue ante. Sed porta sit amet lacus sit amet laoreet. Fusce ut lorem
+        dolor. Donec placerat orci nibh, vel tincidunt lacus lacinia quis.
+        Nullam sem leo, interdum in justo ut, elementum sodales felis. In ac
+        dolor sem. Cras eget erat tortor. Phasellus justo metus, mollis ut
+        tincidunt gravida, sodales at nulla. Fusce in neque neque. Proin non
+        pretium odio, id mattis lorem. Ut quis dolor purus. Orci varius natoque
+        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Curabitur laoreet
+        purus in fringilla luctus. Aenean sollicitudin ex nec facilisis
+        molestie. Donec non nibh mattis, maximus eros in, cursus purus.
+        Curabitur accumsan quam vitae sapien ultricies dapibus. In scelerisque
+        gravida lectus, sed tristique leo tempor ut. Suspendisse molestie et
+        metus vitae posuere. Vestibulum ante ipsum primis in faucibus orci
+        luctus et ultrices posuere cubilia curae; Donec eget sapien diam. Proin
+        tempor suscipit leo, vitae tempor velit posuere hendrerit. Nam a odio
+        molestie lacus vehicula semper sit amet eget lacus. </h5>
+        
+        
+        Pellentesque nisl
+        purus, ultricies ac risus ut, facilisis sagittis purus. Mauris tincidunt
+        suscipit erat, id rutrum ipsum posuere nec. Pellentesque fringilla, eros
+        interdum eleifend aliquet, lacus libero egestas lorem, in maximus mi
+        tortor id augue. Vivamus rhoncus convallis ipsum, at varius nisl cursus
+        a. Quisque hendrerit nisl quis sapien posuere, vel vulputate magna
+        interdum. In dignissim, est condimentum consequat luctus, nisl leo
+        ultricies risus, in consectetur lacus tellus quis augue. Vivamus euismod
+        interdum turpis, a tempus erat tincidunt et. Phasellus luctus volutpat
+        tempor. Integer nec bibendum lacus. Sed id ultricies risus. Proin porta
+        luctus tellus nec porttitor. Curabitur massa magna, ornare in dui sit
+        amet, lacinia faucibus diam. Nulla tempor accumsan velit vel viverra.
+        Mauris sit amet nulla vel tortor mollis lacinia nec at diam.
             </h5>
             
             {/* <Navbar/> */}

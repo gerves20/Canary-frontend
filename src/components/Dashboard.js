@@ -1,5 +1,7 @@
 
 import React, { useEffect, useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import {  Link } from "react-router-dom";
 import './Navbar.css';
@@ -16,8 +18,8 @@ const Dashboard = ({ setAuth }) =>{
           });
     
           const parseData = await res.json();
-          setFname(parseData.first_name);
-          setLname(parseData.last_name);
+          // setFname(parseData.first_name);
+          // setLname(parseData.last_name);
         } catch (err) {
           console.error(err.message);
         }
@@ -37,14 +39,37 @@ const Dashboard = ({ setAuth }) =>{
     return (
     <div>
       
+      
 
-      <h2>Welcome, {firstname}{lastname}</h2>
+      <h2>Welcome, </h2>
         <h1>Notifications: </h1>
+    
+  <div class="card">
+  <h5 class="card-header">Notice</h5>
+  <div class="card-body">
+    <h5 class="card-title">COVID-19 Booster</h5>
+    <p class="card-text">You are eligible for your COVID-19 booster shot. Would you like to make an appointment?</p>
+    <a href="#" class="btn btn-primary">Not Now</a>
+    <a href="#" class="btn btn-secondary">Yes</a>
+  </div>
+</div>
+
+<div class="card">
+  <h5 class="card-header">Notice</h5>
+  <div class="card-body">
+    <h5 class="card-title">Account Verification</h5>
+    <p class="card-text">You have not verified your Canary account by email. Would you like to do that now? </p>
+    <a href="#" class="btn btn-primary" id="primary">Not Now</a>
+    <a href="#" class="btn btn-secondary" id="secondary">Yes</a>
+  </div>
+</div>
+
+
 
         <div id = "button">
         <label>
 
-        <Link className="text-link" to="/" ><button  type="submit" className={"sumbit"} class="btn btn-outline-dark btn-lg">Log Out</button></Link>
+        
         
         </label>
         </div>
