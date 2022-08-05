@@ -176,7 +176,7 @@ const handleEditFormSubmit = (event) => {
                            placeholder="Enter the name of vax..."
                            onChange={handleAddFormChange}>
                     </input>
-                    <input type="text"
+                    <input type="date"
                     id="floatingInput"
                            name="date"
                            required="required"

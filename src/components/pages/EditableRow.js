@@ -23,7 +23,7 @@ const EditableRow = ({editFormData, handleEditFormChange, handleCancelClick}) =>
         </td>
         <td>
         <input
-          type="text"
+          type="date"
           required="required"
           placeholder="Enter the date of vax..."
           name="date"

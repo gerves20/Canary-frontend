@@ -48,7 +48,7 @@ const  Profile = () =>{
             </div>
             </div>
             <h3 id="profile">Country</h3>
-            <div id="panel">
+            <div id="panel">z
             <div  class="panel panel-default">
             <div class="panel-body">A Basic Panel</div>
             </div>

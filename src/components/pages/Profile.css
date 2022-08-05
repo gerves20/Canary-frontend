@@ -200,6 +200,10 @@ input:focus + label {
 {
     font-size:18px;
 }
+input[type="date"]
+{
+    font-size:18px;
+}
   
 #panel{
     
