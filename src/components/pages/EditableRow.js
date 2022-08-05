@@ -7,37 +7,37 @@ const EditableRow = ({editFormData, handleEditFormChange, handleCancelClick}) =>
         <input
           type="text"
           required="required"
-          placeholder="Enter a name..."
-          name="fullName"
+          placeholder="Enter your vax..."
+          name="vax_id"
           onChange={handleEditFormChange}
-          value={editFormData.fullName}></input>
+          value={editFormData.vax_id}></input>
         </td>
         <td>
         <input
           type="text"
           required="required"
-          placeholder="Enter a address..."
-          name="address"
+          placeholder="Enter your vax name..."
+          name="name_of_vax"
           onChange={handleEditFormChange}
-          value={editFormData.address}></input>
+          value={editFormData.name_of_vax}></input>
         </td>
         <td>
         <input
           type="text"
           required="required"
-          placeholder="Enter a phone number..."
-          name="phoneNumber"
+          placeholder="Enter the date of vax..."
+          name="date"
           onChange={handleEditFormChange}
-          value={editFormData.phoneNumber}></input>
+          value={editFormData.date}></input>
         </td>
         <td>
         <input
           type="text"
           required="required"
-          placeholder="Enter a email..."
-          name="email"
+          placeholder="Enter the name of vax provider..."
+          name="vax_provider"
           onChange={handleEditFormChange}
-          value={editFormData.email}></input>
+          value={editFormData.vax_provider}></input>
         </td>
         <td>
         <button  type="submit" className={"sumbit"} class="btn btn-outline-dark btn-lg">Save</button>

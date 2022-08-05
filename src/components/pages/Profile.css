@@ -151,23 +151,30 @@ input:focus + label {
  th {
     font-family: 'Inter', sans-serif;
     background-color: white;
-    
+    font-weight: 600;
+    box-sizing: border-box;
+    /* filter: drop-shadow(0px 10px 3px black); */
   }
   table {
     font-family: 'Inter', sans-serif;
     border-collapse: collapse;
     width: 75%;
     background-color: white;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 5px 3px rgb(37, 37, 37));
   }
   
   th,
   td {
     border: 1px solid #ffffff;
     text-align: left;
-    padding: 8px;
+
     background-color: white;
     font-size: 32px;
     font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    /* filter: drop-shadow(0px 10px 3px black); */
+   
     
   }
   h1{
@@ -177,8 +184,35 @@ input:focus + label {
     text-align: center;
     width: 100%;
     justify-content: space-evenly;
+    box-sizing: border-box;
 
   }
   h2{
     padding-top: 70px;
   }
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+  }
+  input[type="text"]
+{
+    font-size:18px;
+}
+  
+#panel{
+    
+    width: 50%;
+    padding-left: 15%;
+    
+    
+}
+.panel-body{
+    background-color: #ffffff;
+    width: 70%;
+    box-sizing: border-box;
+    
+   
+
+}

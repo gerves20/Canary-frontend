@@ -17,6 +17,8 @@ const Navbar = () =>{
       <Link  className={"link-styles"}  to="/settings">Settings</Link>
       <Link className={"link-styles"} to="/profile">Profile</Link>
       <Link className={"link-styles"} to="/dashboard">Notifications</Link>
+      {/* <h3>Your Account</h3>
+      <span class="glyphicon glyphicon-user" id="user" aria-hidden="true"></span> */}
       <Link className="text-link" to="/" ><button  type="submit" className={"sumbit"} class="btn btn-outline-dark btn-lg">Log Out</button></Link>
  
 

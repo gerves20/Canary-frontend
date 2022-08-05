@@ -1,10 +1,10 @@
 [
     {
       "id": 1,
-      "fullName": "GB2063",
-      "address": "COVID-19 Vaccine",
-      "phoneNumber": "06/20/2022",
-      "email": "Pfizer"
+      "vax_id": "GB2063",
+      "name_of_vax": "COVID-19 Vaccine",
+      "date": "06/20/2022",
+      "vax_provider": "Pfizer"
     }
     
   ]

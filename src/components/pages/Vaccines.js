@@ -11,18 +11,19 @@ import EditableRow from './EditableRow';
 const  Vaccines = () =>{
 
     const[contacts, setContacts] = useState(data);
-    const[addFormData, setAddFormData] = useState({fullName:'',
-address:'',
-phoneNumber:'',
-email:''});
+    const[addFormData, setAddFormData] = useState({
+vax_id:'',
+name_of_vax:'',
+date:'',
+vax_provider:''});
 
 const [editContactId, setEditContactId] = useState(null);
 
 const [editFormData, setEditFormData] = useState({
-    fullName:'',
-    address:'',
-    phoneNumber:'',
-    email:''
+    vax_id:'',
+    name_of_vax:'',
+    date:'',
+    vax_provider:''
 
 });
 
@@ -61,10 +62,10 @@ const handleAddFormSubmit = (e) =>{
 
     const newContact ={
         id: nanoid(),
-        fullName: addFormData.fullName,
-        address: addFormData.address,
-        phoneNumber: addFormData.phoneNumber,
-        email: addFormData.email,
+        vax_id: addFormData.vax_id,
+        name_of_vax: addFormData.name_of_vax,
+        date: addFormData.date,
+        vax_provider: addFormData.vax_provider,
     };
     
 
@@ -81,10 +82,10 @@ const handleEditClick = (e, contact) =>{
     setEditContactId(contact.id);
 
     const formValues = {
-        fullName: contact.fullName,
-        address: contact.address,
-        phoneNumber: contact.phoneNumber,
-        email: contact.email,
+        vax_id: contact.vax_id,
+        name_of_vax: contact.name_of_vax,
+        date: contact.date,
+        vax_provider: contact.vax_provider,
       };
   
       setEditFormData(formValues);
@@ -95,10 +96,10 @@ const handleEditFormSubmit = (event) => {
 
     const editedContact = {
       id: editContactId,
-      fullName: editFormData.fullName,
-      address: editFormData.address,
-      phoneNumber: editFormData.phoneNumber,
-      email: editFormData.email,
+      vax_id: editFormData.vax_id,
+      name_of_vax: editFormData.name_of_vax,
+      date: editFormData.date,
+      vax_provider: editFormData.vax_provider,
     };
 
     const newContacts = [...contacts];
@@ -163,30 +164,30 @@ const handleEditFormSubmit = (event) => {
                 <form className={"vaccine"} onSubmit={handleAddFormSubmit}>
                     <input type="text"
                             id="floatingInput"
-                           name="fullName"
+                           name="vax_id"
                            required="required"
-                           placeholder="Enter a name..."
+                           placeholder="Enter your vax id..."
                            onChange={handleAddFormChange}>
                     </input>
                     <input type="text"
                     id="floatingInput"
-                           name="address"
+                           name="name_of_vax"
                            required="required"
-                           placeholder="Enter a address..."
+                           placeholder="Enter the name of vax..."
                            onChange={handleAddFormChange}>
                     </input>
                     <input type="text"
                     id="floatingInput"
-                           name="phoneNumber"
+                           name="date"
                            required="required"
-                           placeholder="Enter a phone number..."
+                           placeholder="Enter the date..."
                            onChange={handleAddFormChange}>
                     </input>
                     <input type="text"
-                           name="email"
+                           name="vax_provider"
                            id="floatingInput"
                            required="required"
-                           placeholder="Enter a email..."
+                           placeholder="Enter your vax provider..."
                            onChange={handleAddFormChange}>
                     </input>
                     <button  type="submit" className={"sumbit"} class="btn btn-outline-dark btn-lg">Add</button>
