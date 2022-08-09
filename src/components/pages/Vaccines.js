@@ -128,8 +128,15 @@ const handleEditFormSubmit = (event) => {
 
     return(
         <div>
-             <h1>Your Vaccines</h1>
-
+      <h1 id="vaxt">Your Vaccines</h1>
+      <div id="nav" class="nav">
+        
+      <Link className={"link"} to="/vaccines"><button type="button" id="links-4" class="btn btn-link">Vaccines</button></Link>
+        <Link  className={"link"} to="/profile"><button type="button" id="links" class="btn btn-link">Profile</button></Link>
+        <Link className={"link"} to="/settings"><button button type="button" id="links" class="btn btn-link">Settings</button></Link>
+        <Link className={"link"} to="/dashboard"><button button type="button" id="links" class="btn btn-link">Notifications</button></Link>
+        </div>
+             
              <div className="app-container">
                 <form onSubmit={handleEditFormSubmit}>
                 <table class="table table-striped">

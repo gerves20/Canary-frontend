@@ -38,11 +38,24 @@ const Dashboard = ({ setAuth }) =>{
 
     return (
     <div>
-      
-      
+      <h1 id="vaxt">Your Notifications</h1>
+      <div id="nav" class="nav">
+        
+      {/* <Link className={"link"} to="/vaccines"><button type="button" id="links"  className={"link"} class="btn btn-link">Vaccines</button></Link>
+        <Link  className={"link"} to="/profile"><button type="button" id="links" className={"link"} class="btn btn-link">Profile</button></Link>
+        <Link className={"link"} to="/settings"><button button type="button" className={"link"} id="links" class="btn btn-link">Settings</button></Link> */}
 
+<Link className={"link"} to="/vaccines"><button type="button" id="links" class="btn btn-link">Vaccines</button></Link>
+        <Link  className={"link"} to="/profile"><button type="button" id="links" class="btn btn-link">Profile</button></Link>
+        <Link className={"link"} to="/settings"><button button type="button" id="links" class="btn btn-link">Settings</button></Link>
+        <Link className={"link"} to="/dashboard"><button button type="button" id="links-1"  class="btn btn-link">Notifications</button></Link>
+        </div>
+
+        
       <h2>Welcome, </h2>
         <h1>Notifications: </h1>
+
+
     
   <div class="card">
   <h5 class="card-header">Notice</h5>
