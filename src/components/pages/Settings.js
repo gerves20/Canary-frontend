@@ -1,5 +1,5 @@
 import React from 'react';
-import './Register.css';
+import './Settings.css';
 import { useState, useEffect } from 'react';
 import { Link, useParams } from "react-router-dom";
 
@@ -15,6 +15,19 @@ const  Settings = () =>{
           <Link className={"link"} to="/settings"><button button type="button" id="links-2" class="btn btn-link">Settings</button></Link>
           <Link className={"link"} to="/dashboard"><button button type="button" id="links" class="btn btn-link">Notifications</button></Link>
           </div>
+
+<div id="cards" >
+<div class="cards" >
+  
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Edit Profile</li>
+    <li class="list-group-item">Account Settings</li>
+    <li class="list-group-item">Privacy and Data</li>
+    <li class="list-group-item">Security</li>
+    <li class="list-group-item">Notifications</li>
+  </ul>
+</div>
+</div>
         
 </div>
        

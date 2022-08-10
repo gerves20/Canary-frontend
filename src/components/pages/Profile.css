@@ -241,7 +241,7 @@ filter: drop-shadow(0px 5px 3px rgb(37, 37, 37));
       text-align: center;
       color: #FD644F;
     text-decoration-thickness: 20%;
-    text-underline-offset: 17px;
+    text-underline-offset: 19px;
     text-decoration-line: underline;
     text-decoration-color: #FD644F;
   
@@ -259,7 +259,7 @@ filter: drop-shadow(0px 5px 3px rgb(37, 37, 37));
       text-align: center;
       
     text-decoration-thickness: 20%;
-    text-underline-offset: 17px;
+    text-underline-offset: 19px;
     text-decoration-line: underline;
     text-decoration-color: #FD644F;
   
@@ -273,7 +273,7 @@ filter: drop-shadow(0px 5px 3px rgb(37, 37, 37));
     text-decoration: none;
     color: #FD644F;
     text-decoration-thickness: 20%;
-    text-underline-offset: 17px;
+    text-underline-offset: 19px;
     text-decoration-line: underline;
     text-decoration-color: #FD644F;
     font-family: 'Inter', sans-serif;
@@ -282,4 +282,31 @@ filter: drop-shadow(0px 5px 3px rgb(37, 37, 37));
   
       
   }
+h6{
+    background-color:  #FFFDD0;
+    font-family: 'Inter', sans-serif ;
+    font-size: 20px;
+    color: black;
+    padding-top: 20px;
 
+}
+.my-4{
+    border: 2px solid black;
+    background-color: #FFFEDD;
+}
+/* div{
+    background-color: #FFFDD0;
+
+} */
+
+form{
+    background-color: #FFFDD0;
+}
+/* .card-body{
+    background-color: #FFFDD0;
+
+} */
+#card{
+  background-color: #FFFDD0;
+
+}
