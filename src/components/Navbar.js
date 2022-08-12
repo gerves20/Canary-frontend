@@ -28,7 +28,7 @@ const Navbar = () =>{
   <Link  className={"link-styles"} to="/">Home</Link>
       <Link  className={"link-styles"}  to="/register">Register</Link>
       <Link className={"link-styles"} to="/login">Login</Link>
-      <Link className="text-link" to="/" ><button  type="submit" className={"sumbit"} class="btn btn-outline-dark btn-lg">Log Out</button></Link>
+      
  
   
 

@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import LoggedInNavbar from "./LoggedInNavbar";
 
 import {  Link } from "react-router-dom";
 import './Navbar.css';
@@ -38,6 +38,7 @@ const Dashboard = ({ setAuth }) =>{
 
     return (
     <div>
+       <LoggedInNavbar/>
       <h1 id="vaxt">Your Notifications</h1>
       <div id="nav" class="nav">
         

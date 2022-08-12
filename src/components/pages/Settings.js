@@ -1,11 +1,14 @@
 import React from 'react';
 import './Settings.css';
 import { useState, useEffect } from 'react';
+// import LoggedInNavbar from "./LoggedInNavbar";
 import { Link, useParams } from "react-router-dom";
+import LoggedInNavbar from '../LoggedInNavbar';
 
 const  Settings = () =>{
     return(
         <div>
+           <LoggedInNavbar/>
             <h1 id="vaxt">Your Settings</h1>
       
         <div id="nav" class="nav">

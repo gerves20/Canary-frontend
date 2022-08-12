@@ -1,14 +1,22 @@
 import React from 'react';
 import './Profile.css';
+import ReadMoreReadLess from './ReadMoreReadLess';
+// import LoggedInNavbar from "./LoggedInNavbar";
 
 import { useState, useEffect } from 'react';
 import { Link, useParams } from "react-router-dom";
+import LoggedInNavbar from '../LoggedInNavbar';
 
 const  Profile = () =>{
 
+  const [ showMore, setShowMore ] = useState(null);
+
+  
    
     return(
         <div>
+           <LoggedInNavbar/>
+          
              <h1 id="vaxt">Your Profile</h1>
       
       <div id="nav" class="nav">
@@ -141,8 +149,7 @@ const  Profile = () =>{
           
 
 
-
-
+<button  type="submit"  className={"sumbit"} class="btn btn-outline-dark btn-lg">More Information</button>
         </div>
         
 

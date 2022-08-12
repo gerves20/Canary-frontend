@@ -18,11 +18,12 @@ h1{
     text-align:  center;
     padding-top: 10%;
     background-color: #FFFDD0;
+    font-weight: 600;
     
 }
 h4{
     text-align:  center;
-    padding-left: 7.4%;
+    padding-left: 5%;
     
     background-color: #FFFDD0;
 
@@ -36,6 +37,17 @@ h5{
 
 }
 
-.img{
-    padding-left: 20%;
+img{
+   text-align: center;
+
+}
+#image{
+    height: 250px;
+    width: 250px;
+    display: block;
+   margin-right: auto;
+   position: relative;
+  left: 280px;
+  top: -120px;
+    float: left;
 }

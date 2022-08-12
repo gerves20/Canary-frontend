@@ -100,3 +100,10 @@ input:focus + label {
 #personal{
     padding-bottom: 200px;
 }
+img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 100px;
+    width: 100px;
+ }

@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import { Link, useParams } from "react-router-dom";
 import ReadOnlyRow from './ReadOnlyRow';
 import EditableRow from './EditableRow';
+import LoggedInNavbar from '../LoggedInNavbar';
 
 const  Vaccines = () =>{
 
@@ -128,6 +129,7 @@ const handleEditFormSubmit = (event) => {
 
     return(
         <div>
+        <LoggedInNavbar/>
       <h1 id="vaxt">Your Vaccines</h1>
       <div id="nav" class="nav">
         

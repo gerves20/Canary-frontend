@@ -91,3 +91,10 @@ h5{
     font-size: small;
 
 }
+img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 100px;
+    width: 100px;
+ }

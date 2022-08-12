@@ -50,7 +50,8 @@ const Login = () =>{
   };
   return (
     <div>
-      {/* <Navbar/> */}
+      <Navbar/>
+      <img src="vector.png" />
       <h1>{message}</h1>
       <h2 className={"link-styles2"}>Login</h2>
       <div className="input-container" id="form" >

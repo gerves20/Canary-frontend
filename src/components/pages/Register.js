@@ -13,6 +13,7 @@ import moment from 'moment';
 import 'react-datepicker/dist/react-datepicker.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Navbar from '../Navbar';
 
 
 // import Select from 'react-select';
@@ -206,8 +207,10 @@ useEffect(() => {
     
     
     <div >
+      <Navbar/>
       
       <h2 id="header">New Patient Registration</h2>
+      <img src="vector.png" />
 
       
       <div className="input-container" id="form" >
