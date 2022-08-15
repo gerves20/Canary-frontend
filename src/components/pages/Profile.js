@@ -91,7 +91,7 @@ const  Profile = () =>{
                       <div class="col-lg-6">
                       <div class="form-group focused">
                         <label class="form-control-label" for="input-last-name">Password</label>
-                        <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Password" value="ABC123"/>
+                        <input type="password" name="password" id="input-last-name" class="form-control form-control-alternative" placeholder="Password" value="ABC123"/>
                       </div>
                       </div>
                     </div>
