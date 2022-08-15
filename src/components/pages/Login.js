@@ -51,7 +51,7 @@ const Login = () =>{
   return (
     <div>
       <Navbar/>
-      <img src="vector.png" />
+      <img id="canary"src="vector.png" />
       <h1>{message}</h1>
       <h2 className={"link-styles2"}>Login</h2>
       <div className="input-container" id="form" >
@@ -69,7 +69,7 @@ const Login = () =>{
         </div>
         <div id = "button">
         <label>
-        <button type="submit"disabled={!email||!password} className={"sumbit"} class="btn btn-outline-dark btn-lg">Login</button>
+        <button type="submit"disabled={!email||!password} id="logi" className={"sumbit"} class="btn btn-outline-dark btn-lg">Login</button>
         </label>
         </div>
       </form>

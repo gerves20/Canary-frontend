@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Register.css';
 import { toast } from 'react-toastify';
+import Navbar from '../Navbar';
+
 const Forgot = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -29,7 +31,11 @@ const Forgot = () => {
         }
     };
     return (
+        
+        <div><Navbar/>
         <div id="register">
+            
+           
             <h1>{message}</h1>
             <h1 id="header1" >Forgot Password</h1>
             <h3 id="title">Enter your email to receive a reset password link:</h3>
@@ -44,6 +50,7 @@ const Forgot = () => {
                 className="btn btn-outline-dark btn-lg sumbit"
                 onClick={onSubmitForm}
             >Submit</button>
+        </div>
         </div>
     );
 }

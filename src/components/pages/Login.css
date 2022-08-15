@@ -89,6 +89,7 @@ h5{
     padding-left: 0%;
     text-decoration: none;
     font-size: small;
+    background-color: #FFFDD0;
 
 }
 img {
@@ -97,4 +98,14 @@ img {
     right: 20px;
     height: 100px;
     width: 100px;
+ }
+ #logi{
+    font-size: 20px;
+
+ }
+ #canary{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+
  }

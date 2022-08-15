@@ -53,7 +53,7 @@ const Dashboard = ({ setAuth }) =>{
         </div>
 
         
-      <h2>Welcome, </h2>
+      <h2>Welcome, User! </h2>
         <h1>Notifications: </h1>
 
 
@@ -74,6 +74,8 @@ const Dashboard = ({ setAuth }) =>{
     <h5 class="card-title">Account Verification</h5>
     <p class="card-text">You have not verified your Canary account by email. Would you like to do that now? </p>
     <a href="#" class="btn btn-primary" id="primary">Not Now</a>
+   
+   
     <a href="#" class="btn btn-secondary" id="secondary">Yes</a>
   </div>
 </div>
@@ -86,6 +88,8 @@ const Dashboard = ({ setAuth }) =>{
         
         
         </label>
+
+        
         </div>
 
 

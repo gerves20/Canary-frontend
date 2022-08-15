@@ -2,6 +2,7 @@ import React from 'react';
 import './Register.css';
 import { useState, useEffect } from 'react';
 import { Link, useParams } from "react-router-dom";
+import Navbar from '../Navbar';
 const Reset = () => {
     const [password, setPassword] = useState("");
     const [cpassword, setCpassword] = useState("");
@@ -50,6 +51,8 @@ const Reset = () => {
         }
     }
     return (
+        <div>
+            <Navbar/>
         <div id="register">
             {
                 !isValid ? <h1>{message}</h1> : (
@@ -78,6 +81,7 @@ const Reset = () => {
                     </>
                 )
             }
+        </div>
         </div>
     );
 }

@@ -33,8 +33,11 @@ const Verification = () => {
         <body>
             <div>
                 {
-                    isValid ? < h2 > {message}  <Link to="/login">Login</Link></h2> : <h2>{message}</h2>
+                    isValid ? < h2 > {message}  <Link to="/dashboard">Login</Link></h2> : <h2>{message}</h2>
+
                 }
+
+                <h2>hello world</h2>
             </div>
         </body >
     );

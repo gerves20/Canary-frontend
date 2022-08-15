@@ -24,10 +24,12 @@ const Navbar = () =>{
   </li>
  
   <li>
+ 
 
   <Link  className={"link-styles"} to="/">Home</Link>
       <Link  className={"link-styles"}  to="/register">Register</Link>
       <Link className={"link-styles"} to="/login">Login</Link>
+      
       
  
   

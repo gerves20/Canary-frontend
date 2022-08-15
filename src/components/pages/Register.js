@@ -208,9 +208,9 @@ useEffect(() => {
     
     <div >
       <Navbar/>
-      
+      <img id="canary"src="vector.png" />
       <h2 id="header">New Patient Registration</h2>
-      <img src="vector.png" />
+     
 
       
       <div className="input-container" id="form" >
