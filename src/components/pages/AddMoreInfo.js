@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 import { Link, useParams } from "react-router-dom";
 import LoggedInNavbar from '../LoggedInNavbar';
 
-const  Profile = () =>{
+const  AddMoreInfo = () =>{
 
   const [ showMore, setShowMore ] = useState(null);
 
@@ -155,4 +155,4 @@ const  Profile = () =>{
 
 };
 
-export default Profile;
+export default AddMoreInfo;

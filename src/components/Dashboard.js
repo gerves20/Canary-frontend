@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LoggedInNavbar from "./LoggedInNavbar";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import {  Link } from "react-router-dom";
 import './Navbar.css';
@@ -33,7 +35,11 @@ const Dashboard = ({ setAuth }) =>{
       }, []);
 
 
-  
+  const showToastMessage = () => {
+        toast.success('Check your email to verify your account', {
+            position: toast.POSITION.TOP_RIGHT
+        });
+      }
 
 
     return (
@@ -63,7 +69,7 @@ const Dashboard = ({ setAuth }) =>{
   <div class="card-body">
     <h5 class="card-title">COVID-19 Booster</h5>
     <p class="card-text">You are eligible for your COVID-19 booster shot. Would you like to make an appointment?</p>
-    <a href="#" class="btn btn-primary">Not Now</a>
+    <a href="#"  id="primary" class="btn btn-primary">Not Now</a>
     <a href="#" class="btn btn-secondary">Yes</a>
   </div>
 </div>
@@ -76,7 +82,7 @@ const Dashboard = ({ setAuth }) =>{
     <a href="#" class="btn btn-primary" id="primary">Not Now</a>
    
    
-    <a href="#" class="btn btn-secondary" id="secondary">Yes</a>
+    <a href="#" onClick={showToastMessage} class="btn btn-secondary" id="secondary">Yes</a>
   </div>
 </div>
 

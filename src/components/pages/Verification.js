@@ -37,7 +37,7 @@ const Verification = () => {
 
                 }
 
-                <h2>hello world</h2>
+                
             </div>
         </body >
     );

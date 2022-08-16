@@ -17,7 +17,7 @@ const  Profile = () =>{
         <div>
            <LoggedInNavbar/>
           
-             <h1 id="vaxt">Your Profile</h1>
+             <h1 id="vaxt">More Info</h1>
       
       <div id="nav" class="nav">
         

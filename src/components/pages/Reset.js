@@ -66,7 +66,7 @@ const Reset = () => {
                                 <label for="floatingPassword">New Password*</label>
                             </div>
                         </div>
-                        <h3 id="title">confirm password:</h3>
+                        <h3 id="title">Confirm password:</h3>
                         <div>
                             <div class="form-floating mb-3" id="reg" >
                                 <input type="password" name="password" class="form-control" style={{ width: "70%" }}
