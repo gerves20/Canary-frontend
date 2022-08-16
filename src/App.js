@@ -14,6 +14,7 @@ import Select from 'react-select';
 import Settings from './components/pages/Settings';
 import Profile from './components/pages/Profile';
 import Vaccines from './components/pages/Vaccines';
+import Test from './components/pages/Test'
 
 
 
@@ -56,6 +57,7 @@ function App() {
         <Route path="/settings" element={<Settings/>} />
         <Route path="/vaccines" element={<Vaccines/>} />
         <Route path="/profile" element={<Profile/>} />
+        <Route path="/test" element={<Test/>} />
         
         
         

@@ -1,5 +1,7 @@
 import React from 'react';
 import './Profile.css';
+import Collapse from 'react-bootstrap/Collapse';
+import ShowMore from 'react-show-more-button';
 
 // import LoggedInNavbar from "./LoggedInNavbar";
 
@@ -9,7 +11,15 @@ import LoggedInNavbar from '../LoggedInNavbar';
 
 const  Profile = () =>{
 
-  const [ showMore, setShowMore ] = useState(null);
+  // const [ showMore, setShowMore ] = useState(null);
+  const [isShown, setIsShown] = useState(false);
+  const togglePassword = () => {
+    setIsShown((isShown) => !isShown);
+  };
+
+
+  const [open, setOpen] = useState(false);
+
 
   
    
@@ -26,9 +36,11 @@ const  Profile = () =>{
         
         <Link className={"link"} to="/settings"><button button type="button" id="links" class="btn btn-link">Settings</button></Link>
         <Link className={"link"} to="/dashboard"><button button type="button" id="links" class="btn btn-link">Notifications</button></Link>
+        
+        
         </div>
             
-           
+        
 
             <div class="card-body" id="card">
               <form>
@@ -91,7 +103,17 @@ const  Profile = () =>{
                       <div class="col-lg-6">
                       <div class="form-group focused">
                         <label class="form-control-label" for="input-last-name">Password</label>
-                        <input type="password" name="password" id="input-last-name" class="form-control form-control-alternative" placeholder="Password" value="ABC123"/>
+                        <input  type={isShown ? "text" : "password"} name="password" id="input-last-name" class="form-control form-control-alternative" placeholder="Password" value="ABC123"/>
+                          <div className="checkbox-container">
+                          <label htmlFor="checkbox">Show password?</label>
+                          <input
+                            id="checkbox"
+                            type="checkbox"
+                            checked={isShown}
+                            onChange={togglePassword}
+                          />
+                        </div>
+                     
                       </div>
                       </div>
                     </div>
@@ -130,19 +152,21 @@ const  Profile = () =>{
                       </div>
                     </div>
                   </div>
+                 
                 </div>
+                
                 <hr class="my-4"/>
                 {/* <!-- Description --> */}
               </form>
-             
-         
-      
+       
       
     
   </div>
+  
+  
 
 
-
+  
 
 
                    
@@ -150,6 +174,7 @@ const  Profile = () =>{
 <button  type="submit"  className={"sumbit"} class="btn btn-outline-dark btn-lg"> Add More Information</button>
         </div>
         
+       
 
     );
 

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LoggedInNavbar from "./LoggedInNavbar";
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -41,6 +42,15 @@ const Dashboard = ({ setAuth }) =>{
         });
       }
 
+      // useEffect(() => {
+      //   window.location.href = "https://covid19vaccine.health.ny.gov/";
+      // }, []);
+
+      const onClick = () => {
+        window.location.href = "https://covid19vaccine.health.ny.gov/";
+      }
+  
+
 
     return (
     <div>
@@ -70,7 +80,7 @@ const Dashboard = ({ setAuth }) =>{
     <h5 class="card-title">COVID-19 Booster</h5>
     <p class="card-text">You are eligible for your COVID-19 booster shot. Would you like to make an appointment?</p>
     <a href="#"  id="primary" class="btn btn-primary">Not Now</a>
-    <a href="#" class="btn btn-secondary">Yes</a>
+    <a href="#" onClick={onClick} class="btn btn-secondary">Yes</a> 
   </div>
 </div>
 

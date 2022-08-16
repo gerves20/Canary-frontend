@@ -161,6 +161,11 @@ useEffect(() => {
   }
 }, [cPassword])
 
+const [isShown, setIsShown] = useState(false);
+const togglePassword = () => {
+  setIsShown((isShown) => !isShown);
+};
+
 // function submitForm(data) {
 //   return new Promise((resolve) => {
 //     setTimeout(() => {
@@ -353,14 +358,23 @@ useEffect(() => {
   <label for="floatingInput">Username*</label>
 </div>
 <div class="form-floating mb-3" id="reg" >
-  <input type="password"  name="password" class="form-control" style={{width: "70%"}} value={password} onChange={(e) => setPassword(e.target.value)} id="floatingPassword" placeholder="Password"/>
+  <input type={isShown ? "text" : "password"}  name="password" class="form-control" style={{width: "70%"}} value={password} onChange={(e) => setPassword(e.target.value)} id="floatingPassword" placeholder="Password"/>
   <label for="floatingPassword">Password*</label>
 </div>
 
 <div class="form-floating mb-3" id="reg">
-  <input type="password"  onChange={handleCPassword} name="password" class="form-control" style={{width: "70%"}} value={cPassword} id="floatingPassword" className={cPasswordClass} placeholder="Password"/>
+  <input type={isShown ? "text" : "password"}  onChange={handleCPassword} name="password" class="form-control" style={{width: "70%"}} value={cPassword} id="floatingPassword" className={cPasswordClass} placeholder="Password"/>
   <label htmlFor="confirmPassword" for="floatingPassword">Confirm Password*</label>
 </div>
+<div className="checkbox-container">
+                          <label htmlFor="checkbox">Show password?</label>
+                          <input
+                            id="checkbox"
+                            type="checkbox"
+                            checked={isShown}
+                            onChange={togglePassword}
+                          />
+                        </div>
 {showErrorMessage && isCPasswordDirty ? <div> Passwords did not match </div> : ''}
 
 </div>
